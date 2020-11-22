@@ -16,9 +16,9 @@ function App() {
       <div className="App">
          <section className="App-content">
 				<h1>App</h1>
-				<Link className="Gif btn btn-dark" to="/gif/vagina">V</Link>
-				<Link className="Gif btn btn-dark" to="/gif/xxx">X</Link>
-				<Link className="Gif btn btn-dark" to="/gif/boobs">B</Link>
+				<Link className="Gif btn btn-dark" to="/gif/bojack">V</Link>
+				<Link className="Gif btn btn-dark" to="/gif/rick">X</Link>
+				<Link className="Gif btn btn-dark" to="/gif/csgo">B</Link>
 				<Route 
 					path="/gif/:keyword" 
 					component={ListOfGifs}
