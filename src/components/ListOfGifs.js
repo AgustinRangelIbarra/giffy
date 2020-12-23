@@ -21,7 +21,7 @@ function ListOfGifs( {params} ) {
 	if (Loading) return <i>Cargando...</i>
 
 	return gifs.map(({ id, title, url }) =>
-		<Gif							
+		<Gif
 			key={id}
 			id={id}						// A GIF, pasale todas las props o propiedades 
 			title={title}				// que hay en singleGif

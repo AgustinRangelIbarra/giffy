@@ -10,7 +10,7 @@ function getGifs ({keyword = 'rick'} = {}, {cant = '5'} = {}) {
          const {data} = response;
          if( Array.isArray(data)) {
             const gifs = data.map(image => {
-               const {images, title, id} = image
+               const {images, title, id} = image;
                const {url} = image.images.downsized_medium;
                 
                return {
@@ -24,7 +24,8 @@ function getGifs ({keyword = 'rick'} = {}, {cant = '5'} = {}) {
          } else {
             <div>Bruh</div>
          }
-      })
+		}
+	)
 }
 
 export default getGifs;
