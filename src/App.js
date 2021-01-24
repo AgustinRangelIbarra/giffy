@@ -13,15 +13,16 @@ function App() {
 					<h1>App</h1>
 				</Link>
 
-				<ShowGifs/>
+				<ShowGifs />
 
 				<Route
 					path="/gif/:keyword" 
 					component={ListOfGifs}
 				/>
 				
+
 				{/* <ListOfGifs keyword={'panda'}/> */}
-				{/*1 <button onClick={() => setKeyword('mapache')} className="btn btn-dark">Cambiar Gifs</button> */}
+				{/* <button onClick={() => setKeyword('mapache')} className="btn btn-dark">Cambiar Gifs</button> */}
          </section>
       </div>
    );
