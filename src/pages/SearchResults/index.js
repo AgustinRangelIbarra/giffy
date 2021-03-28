@@ -19,7 +19,7 @@ function SearchResults ({ params }) {
 			});
 	}, [keyword]); // keyword es la dependencia del efecto
 
-	if (loading) return <i>Loading your Gifs...</i>;
+	if (loading) return <i>Loading your cool Gifs...</i>;
 
 	return <>
 		<ListOfGifs gifs={gifs} />

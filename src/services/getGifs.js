@@ -1,6 +1,6 @@
 const apiKey = 'iRtkW6iWrKlyRViyLldlrO5UxFlCWmDL'
 
-function getGifs ({keyword = 'no'} = {}, {cant = '5'} = {}) {
+function getGifs ({keyword = 'no'} = {}, {cant = '7'} = {}) {
 	
 	const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=${cant}&offset=0&rating=r&lang=en`;
 		

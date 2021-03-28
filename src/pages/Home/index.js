@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'wouter'
+
 import "../../App.css";
 import "../../components/Gif/Gif.css"
 import './styles.css'
