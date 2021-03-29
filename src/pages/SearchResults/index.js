@@ -1,23 +1,14 @@
-import React, {useEffect, useState} from 'react'
-// import Spinner from "../../components/Spinner";
+import React from 'react'
+import { useGifs } from '../../hooks/useGifs'
+
 import ListOfGifs from '../../components/ListOfGifs'
-import getGifs from "../../services/getGifs"
 
 
 function SearchResults ({ params }) {
 	const { keyword } = params;
-	
-	const [loading, setLoading] = useState(false);
-	const [gifs, setGifs] = useState([]);
+	const { loading, gifs } = useGifs({ keyword });
 
-	useEffect(() => {
-		setLoading(true);
-		getGifs({ keyword })
-			.then((gifs) => {
-				setGifs(gifs);
-				setLoading(false);
-			});
-	}, [keyword]); // keyword es la dependencia del efecto
+	console.log('-')
 
 	if (loading) return <i>Loading your cool Gifs...</i>;
 
